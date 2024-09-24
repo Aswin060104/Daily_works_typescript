@@ -6,9 +6,8 @@ var person = /** @class */ (function () {
     }
     person.prototype.getDetails = function (i) {
         for (var index = 0; index < i; index++) {
-            console.log(person.rollNo[index]);
             if (person.rollNo[index] == i)
-                return "Name :" + person._name[index] + " Roll No :" + person.rollNo[index];
+                return "Name : " + person._name[index] + " Roll No : " + person.rollNo[index];
         }
         return "Roll not found";
     };
