@@ -4,9 +4,9 @@ class department{
 
     constructor(departmentName : string, changingCount : number){
         console.log("Before Changing department : ", this.name, this.studentCount);
-        
+
+        this.name = departmentName;        
         this.studentCount = changingCount;
-        this.name = departmentName;
 
         console.log("After Changing department : ", this.name, this.studentCount);
     }
@@ -14,3 +14,4 @@ class department{
 }
 
 var c = new department("AD", 60);
+var c = new department("ECE", 53);

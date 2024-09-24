@@ -10,3 +10,4 @@ var department = /** @class */ (function () {
     return department;
 }());
 var c = new department("AD", 60);
+var c = new department("ECE", 53);
