@@ -8,6 +8,7 @@ class Department{
     constructor( name : string, rollNo : number){
         Department.studentsDetails[Department.count++] = {name, rollNo};
     }
+    
 }
 
 class Student extends Department{
@@ -25,5 +26,5 @@ class Student extends Department{
     }
 }
 
+var student = new Student("Arul",109);
 var student = new Student("Aswin",102);
-console.log(student);

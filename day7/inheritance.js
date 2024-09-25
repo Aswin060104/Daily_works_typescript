@@ -15,8 +15,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Department = /** @class */ (function () {
     function Department(name, rollNo) {
-        this.departmentName = "CSE";
         this.collegeName = "KCET";
+        this.departmentName = "CSE";
         Department.studentsDetails[Department.count++] = { name: name, rollNo: rollNo };
     }
     Department.count = 0;
@@ -36,5 +36,6 @@ var Student = /** @class */ (function (_super) {
     };
     return Student;
 }(Department));
+var student = new Student("Arul", 109);
 var student = new Student("Aswin", 102);
-console.log(student);
+console.log(Department.studentsDetails);
