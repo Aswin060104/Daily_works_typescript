@@ -30,11 +30,13 @@ var angularDepartment = /** @class */ (function (_super) {
         _this.employee = 120;
         return _this;
     }
+    angularDepartment.prototype.getTotalEmployee = function () {
+        _super.prototype.getTotalEmployee.call(this);
+        return this.employee + " is Angular Department count";
+    };
     return angularDepartment;
 }(Company));
 var _company = new Company();
 var _angularDepartment = new angularDepartment();
-console.log(_company.employee);
-console.log(_angularDepartment.employee);
-console.log(_angularDepartment.getTotalEmployee());
-console.log(_company.getTotalEmployee());
+console.log(_angularDepartment.getTotalEmployee()); // 120
+console.log(_company.getTotalEmployee()); // 450
