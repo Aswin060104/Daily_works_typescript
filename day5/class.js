@@ -14,4 +14,5 @@ var Person = /** @class */ (function () {
 }());
 var person = new Person("Raja", "Aswin", 102);
 var n = person.getName();
+console.log(person);
 console.log(n, person.getRollNo());

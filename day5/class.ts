@@ -19,6 +19,5 @@ class Person {
 
 let person = new Person("Raja","Aswin",102);
 var n : string = person.getName();
-
+console.log(person);
 console.log(n, person.getRollNo());
-
