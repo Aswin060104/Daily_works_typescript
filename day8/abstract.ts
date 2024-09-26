@@ -50,6 +50,3 @@ class manager extends company{
  console.log(Arul.getCompanyDetails());
  console.log(aswin.getSalary());
  console.log(Arul.getSalary());
- 
- 
- 

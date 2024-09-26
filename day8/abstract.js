@@ -44,7 +44,7 @@ var manager = /** @class */ (function (_super) {
     function manager() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.name = "Arul";
-        _this.salary = 30000;
+        _this.salary = 50000;
         return _this;
     }
     manager.prototype.getSalary = function () {
