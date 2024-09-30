@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding: 30px;
+            margin-left: 50px;
+            width: 400px;
+        }
+        .fields input{
+            float: right;
+        }
+        .fields{
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form-container">
+        <div class="fields">
+            <label for="name">Name : </label>
+            <input type="text" pattern="^[a-zA-Z]"><br><br> 
+        </div>
+        <div class="fields">
+            <label for="">Password : </label>
+            <input type="text" pattern="^(?=.*[\d.\d])(?=.*[a-z].[a-z]).{2,4}" ><br><br>    
+        </div>
+        <div class="fields">
+            <label for="">Email : </label>
+            <input type="text" name="email" id="email" pattern="^[a-zA-z0-9]{4,6}@gmail\.[a-z]{2,3}"><br><br>
+        </div>
+        <div class="fields">
+            <label for="">Followed By :</label>
+            <input type="text" pattern="^(?=.\d).{4,}"><br><br>
+        </div>
+        <input type="submit" >
+    </form>
+</body>
+</html>
