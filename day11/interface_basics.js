@@ -1,15 +1,15 @@
-var Student = /** @class */ (function () {
-    function Student() {
-        this.name = "Aswin";
-        this.rollNo = 102;
-        this.totalMarks = 453;
-        this.grade = "A+";
+var person1 = {
+    _name: "Ram",
+    phoneNo: 9865548933,
+    age: 35,
+    getDetails: function () {
+        return this._name + this.phoneNo + this.age;
     }
-    Student.prototype.getStudents = function () {
-        return "Name : " + this.name + "\nRoll no - " + this.rollNo;
-    };
-    return Student;
-}());
-var s = new Student();
-console.log(s.name);
-console.log(s.getStudents());
+};
+// var person2 : Person = {
+//     _name : "Raj",
+//     phoneNo : 6748397483,
+//     age : 34
+// }
+console.log(person1);
+console.log(person1.getDetails());

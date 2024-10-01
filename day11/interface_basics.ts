@@ -1,21 +1,23 @@
-interface BasicDetails{
-    name : string;
-    rollNo : number;
+interface Person {
+    _name : string;
+    phoneNo : number;
+    age : number;
+    getDetails() : string;
 }
 
-interface MarkDetails{
-    totalMarks : number;
-    grade : string;
-}
-class Student1 implements BasicDetails, MarkDetails{
-    name : string = "Aswin";
-    rollNo: number = 102;
-    totalMarks: number = 453;
-    grade: string = "A+";
-    getStudents() {
-        return "Name : "+this.name + "\nRoll no - " + this.rollNo;
-    }
+var person1 : Person = {
+    _name : "Ram",
+    phoneNo :9865548933,
+     age : 35,
+     getDetails(){
+        return this._name + this.phoneNo + this.age;
+     }
 }
 
-var s = new Student1();
-console.log(s.getStudents());
+// var person2 : Person = {
+//     _name : "Raj",
+//     phoneNo : 6748397483,
+//     age : 34
+// }
+console.log(person1);
+console.log(person1.getDetails());
