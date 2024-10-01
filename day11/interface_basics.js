@@ -3,7 +3,7 @@ var person1 = {
     phoneNo: 9865548933,
     age: 35,
     getDetails: function () {
-        return this._name + this.phoneNo + this.age;
+        return this._name + " " + this.phoneNo + " " + this.age;
     }
 };
 // var person2 : Person = {

@@ -17,7 +17,6 @@ class Student implements BasicDetails, MarkDetails{
     getStudentDetails() {
         return "Name : "+this.name + "\nRoll no - " + this.rollNo;
     }
-
 }
 
 var s = new Student();
