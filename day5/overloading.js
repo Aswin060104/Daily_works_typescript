@@ -5,5 +5,5 @@ function add(a, b) {
         return a + b;
     throw new Error("Invalid Arguments");
 }
-console.log(add(5, 2));
+console.log(add(5,2));
 console.log(add("Raja ", "Aswin"));

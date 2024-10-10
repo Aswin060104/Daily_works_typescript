@@ -11,5 +11,5 @@ function add( a: any, b : any, c? : number){
         return a+b;
 }
 
-console.log(add(5,2));
+console.log(add(6,2));
 console.log(add("Raja ","Aswin"));
