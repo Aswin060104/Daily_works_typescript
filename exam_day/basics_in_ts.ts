@@ -41,3 +41,4 @@ function addition(a : any, b : any, c? : any) : any{
     //     return throw new error("Invalid Type");
 }
 addition(4,3);
+
